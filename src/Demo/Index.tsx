@@ -2,6 +2,7 @@ import React from "react";
 import EduateLogo from "../images/EduateLogo.svg";
 import Banner from "../images/MyEduateBanner.jpg";
 import ContactUs from "../images/ContactUs.jpg";
+import Footer from "../images/MyEduateDemoFooter.jpg";
 const Index = () => {
   return (
     <>
@@ -33,8 +34,8 @@ const Index = () => {
             </ul>
           </div>
           <div className="col-3">
-            <div className="demo__header--button">
-              <button>Login</button>
+            <div className="demo__header--button-block">
+              <button className="demo__header--button">Login</button>
             </div>
           </div>
         </div>
@@ -58,6 +59,42 @@ const Index = () => {
               <input></input>
               <label>Message</label>
               <textarea rows={3}></textarea>
+            </div>
+            <div className="demo__form--button">
+              <button className="demo__form--submit">Submit</button>
+              <button className="demo__form--cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div className="demo__footer">
+          <div className="demo__footer--image-block">
+            <img src={Footer} alt="" className="demo__banner--image" />
+          </div>
+          <div className="demo__footer--data-block ">
+            <div className=" demo__footer--data-block--items">
+              <div className="demo__footer--data-block--flex">
+                <img src={EduateLogo} alt="" className="demo__header--image" />
+                <b>My-Eduate</b>
+              </div>
+
+              <h4>Eduate Pvt. Ltd.</h4>
+              <span>Infra house, Hennur-Bagalur</span>
+              <span>Main Road,Kalyan Nagar</span>
+              <span>Bengaluru 560 043,</span>
+              <span>Karnataka,India</span>
+            </div>
+            <div className="  demo__footer--data-block--items">
+              <h3>Explore</h3>
+              <a href="/"> Home</a>
+              <a href="/">Why Us</a>
+              <a href="/">Solutions</a>
+              <a href="/">Contact Us</a>
+            </div>
+            <div className="  demo__footer--data-block--items">
+              <h3>Download App</h3>
+            </div>
+            <div className="">
+              <h3>News letter</h3>
             </div>
           </div>
         </div>
