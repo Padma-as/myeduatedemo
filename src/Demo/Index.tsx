@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       <div className="demo">
-        <div className="demo__header row g-0">
+        {/* <div className="demo__header row g-0">
           <div className="col-3">
             <div className="demo__header--logo">
               <img src={EduateLogo} alt="" className="demo__header--image" />
@@ -38,15 +38,50 @@ const Index = () => {
               <button className="demo__header--button">Login</button>
             </div>
           </div>
+        </div> */}
+        <div className="nav">
+          <input type="checkbox" id="nav-check" />
+          <div className="nav-header">
+            <div className="nav-title">
+              <img src={EduateLogo} alt="" />
+              My Eduate
+            </div>
+          </div>
+          <div className="nav-btn">
+            <label htmlFor="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+
+          <div className="nav-links">
+            <a href="/" target="_blank">
+              Home
+            </a>
+            <a href="/" target="_blank">
+              Why Us
+            </a>
+            <a href="/">Solutions</a>
+            <a href="/" target="_blank">
+              Our Team
+            </a>
+            <a href="/" target="_blank">
+              Contact Us
+            </a>
+          </div>
+          <div className="demo__header--button-block">
+            <button className="demo__header--button">Login</button>
+          </div>
         </div>
         <div className="demo__banner">
           <img src={Banner} alt="" className="demo__banner--image" />
         </div>
-        <div className="demo__form row g-0">
-          <div className="col">
-            <img src={ContactUs} alt="" className="demo__form--image" />
+        <div className="demo__form">
+          <div className="demo__form--image">
+            <img src={ContactUs} alt="" />
           </div>
-          <div className="col">
+          <div className="demo__form--data">
             <div className="demo__form--title">
               <h4>Book a Demo</h4>
               <label>Name </label>
